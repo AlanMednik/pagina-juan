@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedaleando Me Voy | Reparación de Bicis con Estilo Rasta</title>
+    <meta name="description" content="Servicio de reparación de bicicletas de Juan. Trabajo a domicilio y en el parque. ¡Pedaleando me voy con tu bici como nueva!">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="assets/img/logo.png" alt="Logo Pedaleando Me Voy">
+                <div class="nav-logo-text">PEDALEANDO <span>ME VOY</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#juan">Sobre Juan</a></li>
+                <li><a href="#turno">Pedir Turno</a></li>
+            </ul>
+            <a href="https://wa.me/5491161135826" class="nav-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <div class="nav-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">&times;</button>
+        <a href="#hero" class="mobile-link">Inicio</a>
+        <a href="#servicios" class="mobile-link">Servicios</a>
+        <a href="#galeria" class="mobile-link">Galería</a>
+        <a href="#juan" class="mobile-link">Sobre Juan</a>
+        <a href="#turno" class="mobile-link">Pedir Turno</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-video-wrapper">
+            <video autoplay muted loop playsinline class="hero-video-local">
+                <source src="assets/video/video-juan.mp4" type="video/mp4">
+                Su navegador no soporta el tag de video.
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-rasta-stripe">
+            <div class="s1"></div>
+            <div class="s2"></div>
+            <div class="s3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">El Mecanico del Parque Avellaneda</div>
+            <img src="assets/img/logo-hero.png" alt="Logo Pedaleando Me Voy" class="hero-main-logo reveal">
+            <h1 class="hero-title reveal">
+                <span class="line3">Bicicletería de Juan</span>
+            </h1>
+            <p class="hero-sub reveal">Mecánica especializada donde estés. En <span>tu casa</span> o en <span>el parque</span>. Trabajo rápido con buena vibra.</p>
+            <div class="hero-ctas reveal">
+                <a href="#turno" class="btn-primary"><i class="fas fa-calendar-check"></i> Pedir Turno</a>
+                <a href="#servicios" class="btn-secondary">Mis Servicios</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section id="stats">
+        <div class="container stats-grid">
+            <div class="stat-item reveal">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">BICIS ARREGLADAS</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">BUENA ONDA</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number">0</div>
+                <div class="stat-label">LOCAL FIJO</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">SOPORTE WHATSAPP</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="section-title reveal">MIS <span class="service-title-accent">SERVICIOS</span></h2>
+            <div class="rasta-bar reveal">
+                <span class="r"></span>
+                <span class="y"></span>
+                <span class="g"></span>
+            </div>
+            <p class="section-subtitle reveal">Mecánica integral móvil para todo tipo de bicicletas.</p>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon icon-yellow"><i class="fas fa-tools"></i></div>
+                    <h3>SERVICE GENERAL</h3>
+                    <p>Ajuste de frenos, cambios, lubricación de cadena y control de presión. Todo lo que tu bici necesita para rodar suave.</p>
+                    <span class="service-price">$2500</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon icon-green"><i class="fas fa-bicycle"></i></div>
+                    <h3>PONCHADURAS</h3>
+                    <p>Reparación de cámaras o cambio por nuevas en el momento. No te quedes a pata en medio del paseo.</p>
+                    <span class="service-price">$800</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon icon-red"><i class="fas fa-gears"></i></div>
+                    <h3>TRANSMISIÓN</h3>
+                    <p>Limpieza profunda de piñones, platos y cadena. Cambio de cables y fundas para cambios perfectos.</p>
+                    <span class="service-price">$3200</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon icon-gold"><i class="fas fa-bolt"></i></div>
+                    <h3>FRENOS HIDRÁULICOS</h3>
+                    <p>Purga y cambio de líquido para frenos de disco. Máxima seguridad para tus descensos.</p>
+                    <span class="service-price">$4500</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria">
+        <div class="container">
+            <h2 class="section-title reveal">MI <span style="color:var(--rasta-green)">TRABAJO</span></h2>
+            <div class="rasta-bar reveal">
+                <span class="r"></span>
+                <span class="y"></span>
+                <span class="g"></span>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item g1 reveal-left">
+                    <img src="assets/img/parque.png" alt="Reparando en el parque">
+                    <div class="overlay"><span>Taller móvil en el parque</span></div>
+                </div>
+                <div class="gallery-item g2 reveal-right">
+                    <img src="assets/img/herramientas.png" alt="Mis herramientas">
+                    <div class="overlay"><span>Herramientas profesionales</span></div>
+                </div>
+                <div class="gallery-item g3 reveal-right">
+                    <img src="assets/img/bici-lista.png" alt="Bici lista">
+                    <div class="overlay"><span>Rodando con estilo</span></div>
+                </div>
+                <div class="gallery-item g4 reveal">
+                    <img src="assets/img/rueda.png" alt="Centrado de rueda">
+                    <div class="overlay"><span>Ajuste de rayos</span></div>
+                </div>
+                <div class="gallery-item g5 reveal">
+                    <img src="assets/img/logo.png" alt="Detalle rasta">
+                    <div class="overlay"><span>Pura vida en cada arreglo</span></div>
+                </div>
+                <div class="gallery-item g6 reveal">
+                    <img src="assets/img/parque.png" alt="Ambiente">
+                    <div class="overlay"><span>Atención personalizada</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Juan Section -->
+    <section id="juan">
+        <div class="container juan-inner">
+            <div class="juan-photo-wrap reveal-left">
+                <div class="juan-photo-frame">
+                    <div class="juan-photo-bg"></div>
+                    <!-- Assuming the user attached Juan's face as the second image -->
+                    <img src="assets/img/juan-bio.png" alt="Juan - El Bicicletero" class="juan-photo">
+                    <div class="juan-photo-badge">
+                        <span>Desde</span>
+                        <strong>2015</strong>
+                        <span>Rodando</span>
+                    </div>
+                </div>
+            </div>
+            <div class="juan-text reveal-right">
+                <p class="eyebrow">EL HOMBRE DETRÁS DE LAS HERRAMIENTAS</p>
+                <h2>CONOCÉ A <span>JUAN</span></h2>
+                <p>¡Hola! Soy Juan, amante de las bicicletas y la buena música. Decidí que el mundo no necesitaba otro taller encerrado entre cuatro paredes. Por eso, <strong>Pedaleando Me Voy</strong> es un concepto diferente.</p>
+                <p>Voy a donde estés con mi caja de herramientas rasta. Ya sea en la puerta de tu casa o mientras disfrutás del sol en el parque, yo me encargo de que tu bici vuelva a ser la de antes.</p>
+                <p>No tengo local, mi taller es el asfalto y mi techo es el cielo. ¡Vamo' arriba!</p>
+                <div class="juan-pills">
+                    <span class="juan-pill pill-red">Pasión</span>
+                    <span class="juan-pill pill-yellow">Paciencia</span>
+                    <span class="juan-pill pill-green">Honestidad</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="opiniones">
+        <div class="container">
+            <h2 class="section-title reveal">LO QUE DICEN LOS <span>BUENOS VIBRAS</span></h2>
+            <div class="rasta-bar reveal">
+                <span class="r"></span>
+                <span class="y"></span>
+                <span class="g"></span>
+            </div>
+            
+            <div class="testimonials-carousel reveal">
+                <div class="testimonials-track" id="tTrack">
+                    <div class="testimonial-card">
+                        <div class="t-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="t-text">"Juan me arregló la bici en el parque mientras yo tomaba unos mates. Un genio, quedó impecable y el precio muy justo."</p>
+                        <div class="t-author">
+                            <div class="t-avatar av1">M</div>
+                            <div class="t-info">
+                                <strong>Marcos G.</strong>
+                                <span>Mountain Bike User</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="t-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="t-text">"Lo llamé por un pinchazo en casa y llegó al toque. Súper profesional y se nota que sabe mucho de bicis viejas."</p>
+                        <div class="t-author">
+                            <div class="t-avatar av2">S</div>
+                            <div class="t-info">
+                                <strong>Sofi R.</strong>
+                                <span>City Cruiser</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="t-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="t-text">"Excelente servicio. La vibra de Juan es lo mejor. Me dejó la transmisión como nueva, ni se escucha el roce."</p>
+                        <div class="t-author">
+                            <div class="t-avatar av3">P</div>
+                            <div class="t-info">
+                                <strong>Pedro L.</strong>
+                                <span>Road Cycling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="t-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="t-text">"El mejor bicicletero de la zona. Trabajo prolijo y súper transparente. 100% recomendado."</p>
+                        <div class="t-author">
+                            <div class="t-avatar av4">A</div>
+                            <div class="t-info">
+                                <strong>Ana V.</strong>
+                                <span>Bici Urbana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="turno">
+        <div class="container turno-inner">
+            <div class="turno-info reveal-left">
+                <h2>PEDÍ TU <span>TURNO</span></h2>
+                <div class="rasta-bar" style="margin-left:0">
+                    <span class="r"></span>
+                    <span class="y"></span>
+                    <span class="g"></span>
+                </div>
+                <p>Escribime para coordinar. Podemos vernos en tu casa o encontrarnos en el punto de encuentro de Parque Avellaneda para un arreglo rápido al aire libre.</p>
+                
+                <div class="turno-details">
+                    <div class="turno-detail-item">
+                        <div class="turno-detail-icon di-green"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Punto de Encuentro</strong>
+                            <span>Parque Avellaneda (Cerca del Antiguo Natatorio)</span>
+                        </div>
+                    </div>
+                    <div class="turno-detail-item">
+                        <div class="turno-detail-icon di-yellow"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Horarios</strong>
+                            <span>Lun a Sáb: 10:00 - 19:00</span>
+                        </div>
+                    </div>
+                    <div class="turno-detail-item">
+                        <div class="turno-detail-icon di-red"><i class="fas fa-truck-pickup"></i></div>
+                        <div>
+                            <strong>A Domicilio</strong>
+                            <span>Consultar zona de cobertura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-embed">
+                    <!-- Updated Map for Parque Avellaneda, CABA -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8804791093153!2d-58.4795368!3d-34.6463994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc97378950001%3A0xe5f95874254133ae!2sParque%20Avellaneda!5e0!3m2!1ses!2sar!4v1710920000000!5m2!1ses!2sar" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="booking-form reveal-right">
+                <form id="appointmentForm">
+                    <h3>RESERVÁ AHORA</h3>
+                    <p>Completá los datos y me contacto con vos.</p>
+                    
+                    <div class="form-group">
+                        <label for="name">Tu Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ej: +54 9 11 ..." required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Fecha</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Hora</label>
+                            <select id="time" name="time" required>
+                                <option value="" disabled selected>Elegir...</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="18:00">06:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Servicio</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>¿Qué arreglamos?</option>
+                            <option value="general">Service General</option>
+                            <option value="pinchazo">Pinchadura / Cámara</option>
+                            <option value="frenos">Frenos</option>
+                            <option value="transmision">Transmisión / Cambios</option>
+                            <option value="otro">Otro arreglo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">¿Dónde nos vemos?</label>
+                        <select id="location" name="location" required>
+                            <option value="parque">En el Parque (Punto de Encuentro)</option>
+                            <option value="domicilio">A Domicilio (Pasame tu dirección)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje Adicional</label>
+                        <textarea id="message" name="message" placeholder="Contame un poco más sobre el problema de la bici..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary form-submit">
+                        CONFIRMAR TURNO <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon">🇯🇲</div>
+                    <h4>¡PEDIDO RECIBIDO!</h4>
+                    <p>Gracias por confiar. En breve te escribo por WhatsApp para confirmar el punto de encuentro.</p>
+                    <button class="btn-primary" style="margin-top:20px" onclick="location.reload()">VOLVER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-rasta-top">
+            <div class="r"></div>
+            <div class="y"></div>
+            <div class="g"></div>
+        </div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/img/logo.png" alt="Logo Footer">
+                <h3>PEDALEANDO ME VOY</h3>
+                <p>Mecánica de bicicletas móvil con la mejor energía. Tu bici merece rodar feliz.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>ENLACES</h4>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#turno">Pedir Turno</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>CONTACTO</h4>
+                <div class="footer-contact-item">
+                    <div class="contact-icon" style="color:var(--rasta-green)"><i class="fas fa-map-marker-alt"></i></div>
+                    <span>Zona de cobertura: Parque Avellaneda y alrededores del barrio.</span>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="contact-icon" style="color:var(--rasta-yellow)"><i class="fas fa-phone-alt"></i></div>
+                    <span>+54 9 11 1234-5678</span>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="contact-icon" style="color:var(--rasta-red)"><i class="fas fa-envelope"></i></div>
+                    <span>juan@pedaleandomevoy.com</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Pedaleando Me Voy - Todos los derechos reservados.</p>
+            <p>Hecho con <span class="heart">❤</span> y mucha vibra positiva.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Btn -->
+    <a href="https://wa.me/5491161135826" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

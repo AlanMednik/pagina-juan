@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+node_modules/
+dist/
+.env
+*.log
+assets/video/parqueavellaneda.mp4
