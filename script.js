@@ -1,5 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    // --- PRELOADER LOGIC ---
+    const preloader = document.getElementById('preloader');
+    const loaderBar = document.getElementById('loaderBar');
+    const loaderPercent = document.getElementById('loaderPercent');
+    const heroVideo = document.querySelector('.hero-video-local');
+    const loaderStatus = document.querySelector('.loader-status');
+
+    let currentProgress = 0;
+    let targetProgress = 0;
+    let isVideoReady = false;
+    let isPageLoaded = false;
+
+    const updateLoader = () => {
+        if (currentProgress < targetProgress) {
+            currentProgress += Math.random() * 2;
+            if (currentProgress > targetProgress) currentProgress = targetProgress;
+            
+            const rounded = Math.floor(currentProgress);
+            loaderPercent.textContent = rounded;
+            loaderBar.style.width = `${rounded}%`;
+        }
+
+        if (currentProgress < 100) {
+            requestAnimationFrame(updateLoader);
+        } else if (isVideoReady && isPageLoaded) {
+            // Final activation
+            loaderStatus.textContent = "¡One Love! Ya estamos listos.";
+            setTimeout(() => {
+                preloader.classList.add('fade-out');
+                // Trigger reveals once preloader is gone
+                setTimeout(revealOnScroll, 400);
+            }, 800);
+        }
+    };
+
+    // Simulate progress while resources load
+    const fakeProgress = setInterval(() => {
+        if (targetProgress < 90) {
+            targetProgress += Math.random() * 15;
+        }
+    }, 200);
+
+    // Wait for video
+    if (heroVideo) {
+        if (heroVideo.readyState >= 3) {
+            isVideoReady = true;
+        } else {
+            heroVideo.oncanplaythrough = () => { isVideoReady = true; };
+            // Fallback for video
+            setTimeout(() => { isVideoReady = true; }, 4000);
+        }
+    } else {
+        isVideoReady = true;
+    }
+
+    window.addEventListener('load', () => {
+        isPageLoaded = true;
+        clearInterval(fakeProgress);
+        targetProgress = 100;
+    });
+
+    requestAnimationFrame(updateLoader);
+
     // --- NAVBAR SCROLL EFFECT ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
