@@ -556,23 +556,13 @@ body {
   font-family: var(--ff-title);
   font-size: 1.5rem;
   letter-spacing: 1px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   color: var(--rasta-yellow);
 }
 .service-card p {
-  font-size: 0.93rem;
-  opacity: 0.8;
+  font-size: 0.95rem;
+  opacity: 0.9;
   line-height: 1.6;
-}
-.service-price {
-  display: inline-block;
-  margin-top: 1.2rem;
-  background: linear-gradient(135deg, var(--rasta-green), #1a5e1a);
-  color: #fff;
-  padding: 5px 16px;
-  border-radius: 50px;
-  font-size: 0.82rem;
-  font-weight: 700;
 }
 
 /* ===================================================
