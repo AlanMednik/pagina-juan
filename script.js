@@ -182,38 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', updateCarousel);
 
-    // --- APPOINTMENT FORM ---
-    const appointmentForm = document.getElementById('appointmentForm');
-    const formSuccess = document.getElementById('formSuccess');
-
-    if (appointmentForm) {
-        appointmentForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Show loading state (simple)
-            const submitBtn = appointmentForm.querySelector('.form-submit');
-            const originalBtnText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ENVIANDO...';
-            submitBtn.disabled = true;
-
-            // Simulate API call
-            setTimeout(() => {
-                appointmentForm.style.display = 'none';
-                formSuccess.style.display = 'block';
-                
-                // Confetti or effect if we wanted, but let's keep it clean
-                console.log('Turno reservado:', {
-                    nombre: document.getElementById('name').value,
-                    phone: document.getElementById('phone').value,
-                    date: document.getElementById('date').value,
-                    time: document.getElementById('time').value,
-                    service: document.getElementById('service').value,
-                    location: document.getElementById('location').value
-                });
-            }, 1500);
-        });
-    }
-
     // --- HERO PARTICLES (CUSTOM SIMPLE CANVAS) ---
     // Adding some drifting rasta-colored dots for flare
     const hero = document.getElementById('hero');

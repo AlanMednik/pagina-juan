@@ -45,7 +45,7 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#juan">Sobre Juan</a></li>
-                <li><a href="#turno">Pedir Turno</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <a href="https://wa.me/5491161135826" class="nav-whatsapp">
                 <i class="fab fa-whatsapp"></i> WhatsApp
@@ -65,7 +65,7 @@
         <a href="#servicios" class="mobile-link">Servicios</a>
         <a href="#galeria" class="mobile-link">Galería</a>
         <a href="#juan" class="mobile-link">Sobre Juan</a>
-        <a href="#turno" class="mobile-link">Pedir Turno</a>
+        <a href="#contacto" class="mobile-link">Contacto</a>
     </div>
 
     <!-- Hero Section -->
@@ -90,7 +90,7 @@
             </h1>
             <p class="hero-sub reveal">Mecánica especializada donde estés. En <span>tu casa</span> o en <span>el parque</span>. Trabajo rápido con buena vibra.</p>
             <div class="hero-ctas reveal">
-                <a href="#turno" class="btn-primary"><i class="fas fa-calendar-check"></i> Pedir Turno</a>
+                <a href="https://wa.me/5491161135826" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Escribime</a>
                 <a href="#servicios" class="btn-secondary">Mis Servicios</a>
             </div>
         </div>
@@ -302,11 +302,11 @@
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section id="turno">
+    <!-- Contacto & Music Section -->
+    <section id="contacto">
         <div class="container turno-inner">
             <div class="turno-info reveal-left">
-                <h2>PEDÍ TU <span>TURNO</span></h2>
+                <h2>¿NOS <span>VEMOS?</span></h2>
                 <div class="rasta-bar" style="margin-left:0">
                     <span class="r"></span>
                     <span class="y"></span>
@@ -344,74 +344,13 @@
                 </div>
             </div>
 
-            <div class="booking-form reveal-right">
-                <form id="appointmentForm">
-                    <h3>RESERVÁ AHORA</h3>
-                    <p>Completá los datos y me contacto con vos.</p>
-                    
-                    <div class="form-group">
-                        <label for="name">Tu Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+            <div class="music-player reveal-right">
+                <div class="music-player-inner">
+                    <h3>VIBRA <span>POSITIVA</span></h3>
+                    <p>¿Necesitás pensarlo? Te dejo una lista con mucho reggae para que te relajes y disfrutes del momento.</p>
+                    <div class="spotify-embed">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbSbnLsAWHRb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">WhatsApp</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ej: +54 9 11 ..." required>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="date">Fecha</label>
-                            <input type="date" id="date" name="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">Hora</label>
-                            <select id="time" name="time" required>
-                                <option value="" disabled selected>Elegir...</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="12:00">12:00 PM</option>
-                                <option value="14:00">02:00 PM</option>
-                                <option value="16:00">04:00 PM</option>
-                                <option value="18:00">06:00 PM</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Servicio</label>
-                        <select id="service" name="service" required>
-                            <option value="" disabled selected>¿Qué arreglamos?</option>
-                            <option value="general">Service General</option>
-                            <option value="pinchazo">Pinchadura / Cámara</option>
-                            <option value="frenos">Frenos</option>
-                            <option value="transmision">Transmisión / Cambios</option>
-                            <option value="otro">Otro arreglo</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="location">¿Dónde nos vemos?</label>
-                        <select id="location" name="location" required>
-                            <option value="parque">En el Parque (Punto de Encuentro)</option>
-                            <option value="domicilio">A Domicilio (Pasame tu dirección)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje Adicional</label>
-                        <textarea id="message" name="message" placeholder="Contame un poco más sobre el problema de la bici..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-primary form-submit">
-                        CONFIRMAR TURNO <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-
-                <div class="form-success" id="formSuccess">
-                    <div class="success-icon">🇯🇲</div>
-                    <h4>¡PEDIDO RECIBIDO!</h4>
-                    <p>Gracias por confiar. En breve te escribo por WhatsApp para confirmar el punto de encuentro.</p>
-                    <button class="btn-primary" style="margin-top:20px" onclick="location.reload()">VOLVER</button>
                 </div>
             </div>
         </div>
@@ -442,7 +381,7 @@
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#turno">Pedir Turno</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
 
