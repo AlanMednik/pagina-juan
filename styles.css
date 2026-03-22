@@ -774,19 +774,10 @@ body {
 .t-avatar {
   width: 48px; height: 48px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-title);
-  font-size: 1.3rem;
-  color: #fff;
+  object-fit: cover;
   flex-shrink: 0;
+  border: 2px solid var(--rasta-yellow);
 }
-.av1 { background: linear-gradient(135deg, var(--rasta-red), #8b1515); }
-.av2 { background: linear-gradient(135deg, var(--rasta-green), #1a5e1a); }
-.av3 { background: linear-gradient(135deg, var(--rasta-yellow), #b58900); }
-.av4 { background: linear-gradient(135deg, var(--rasta-gold), #8b6a14); }
-.av5 { background: linear-gradient(135deg, #4a90d9, #2c5f8a); }
 
 .t-info strong { display: block; font-weight: 800; font-size: 0.95rem; }
 .t-info span { font-size: 0.8rem; opacity: 0.6; }
