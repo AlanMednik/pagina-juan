@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://pedaleandomevoy.netlify.app/sitemap.xml
